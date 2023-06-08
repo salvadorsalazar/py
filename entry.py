@@ -6,7 +6,7 @@ e = Entry(root,width=50, bg="white",fg="black")
 e.pack()
 # e,get()
 
-e.insert(0,"enter your name: ")
+# e.insert(0,"enter your name: ")
 
 def myClick():
     hello = "hello "+ e.get()
