@@ -8,7 +8,12 @@ e.grid(row=0,column=0,columnspan=3,padx=10,pady=10)
 
 def button_add(number):
     # e.delete(0,END)
-    e.insert(0,number)
+    current=e.get()
+    e.delete(0,END)
+    e.insert(0,str(current) + str(number))
+
+    def button_clear():
+        e.delete(0,END)
 
 button_1=Button(root,text='1',padx=40,pady=20,command=lambda:button_add(1))
 button_2=Button(root,text='2',padx=40,pady=20,command=lambda:button_add(2))
@@ -21,9 +26,9 @@ button_8=Button(root,text='8',padx=40,pady=20,command=lambda:button_add(8))
 button_9=Button(root,text='9',padx=40,pady=20,command=lambda:button_add(9))
 button_0=Button(root,text='0',padx=40,pady=20,command=lambda:button_add(0))
 
-button_ads = Button(root,text="+",padx=39,pady=20,command=lambda:button_add(0))
-button_equal= Button(root,text="=",padx=91,pady=20,command=lambda:button_add(0))
-button_clear = Button(root,text="Clear",padx=79,pady=20,command=lambda:button_add(0))
+button_ads = Button(root,text="+",padx=39,pady=20,command=lambda:button_add())
+button_equal= Button(root,text="=",padx=91,pady=20,command=lambda:button_add())
+button_clear = Button(root,text="Clear",padx=79,pady=20,command=button_clear)
 
 
 # put buttins inscreen
