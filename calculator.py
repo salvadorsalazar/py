@@ -29,7 +29,7 @@ button_0=Button(root,text='0',padx=40,pady=20,command=lambda:button_add(0))
 
 button_ads = Button(root,text="+",padx=39,pady=20,command=lambda:button_add(0))
 button_equal= Button(root,text="=",padx=91,pady=20,command=lambda:button_add(0))
-button_clear = Button(root,text="Clear",padx=79,pady=20,command = button_clear)
+# button_clear = Button(root,text="Clear",padx=79,pady=20,command = button_clear)
 
 
 # put buttins inscreen
@@ -46,7 +46,7 @@ button_8.grid(row=1,column=1)
 button_9.grid(row=1,column=2)
 
 button_0.grid(row=4,column=0)
-button_clear.grid(row=4,column=1,columnspan=2)
+# button_clear.grid(row=4,column=1,columnspan=2)
 button_ads.grid(row=5,column=0)
 button_equal.grid(row=5,column=1,columnspan=2)
 
